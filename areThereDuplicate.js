@@ -10,3 +10,7 @@ function areThereDuplicates(...args) {
   }
   return false;
 }
+// One liner
+function areThereDuplicates() {
+  return new Set(arguments).size !== arguments.length;
+}
