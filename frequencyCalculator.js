@@ -1,6 +1,7 @@
 // Returns if st1, st2 have same frequency of each item
 // Arguments provided are integers
 // Examples: sameFrequency(123123, 112233) => true, sameFrequency(123123, 1122334) => false, sameFrequency(1231235, 1122334) => false
+// Complexity O(n)
 function sameFrequency(st1, st2){
    let s1= st1 + '' , s2 = st2 + '';
    const sF = {};
