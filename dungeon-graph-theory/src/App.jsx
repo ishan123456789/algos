@@ -55,6 +55,7 @@ function App() {
      * Starts from starting point finds it's neighbors, enqueue them
      * Later dequeue one by one
      */
+    let layers = 0;
     const dr = [-1, 1, 0, 0];
     const dc = [0, 0, -1, 1];
 
@@ -93,11 +94,14 @@ function App() {
       await new Promise((resolve) => setTimeout(resolve, 1000));
       enqueueNeighbors(r, c);
       nodesInCurrentLayer--;
+      debugger;
       if (nodesInCurrentLayer === 0) {
         nodesInCurrentLayer = nodesInNextLayer;
         nodesInNextLayer = 0;
-        let c = count;
-        setCount(c + 1);
+        await new Promise((resolve) => setTimeout(resolve, 500));
+        layers++;
+
+        setCount(layers);
       }
     }
     return -1;
@@ -113,6 +117,7 @@ function App() {
         <div className="title">
           Please find the Dungeon dragon BFS implementation
         </div>
+        <h4>Layers covered {count}</h4>
         <div className="grid">
           {grid.map((columns, i) => (
             <div className="row" key={i}>
