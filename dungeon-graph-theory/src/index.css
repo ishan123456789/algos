@@ -1,0 +1,27 @@
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.grid {
+  border: 1px solid #ddd;
+  display: block;
+}
+.grid .row {
+  border: 1px solid #ddd;
+  display: block;
+}
+.grid .column.tracked {
+  background: yellowgreen;
+}
+.grid .column {
+  display: inline-block;
+  padding: 1em 0;
+  width: 3em;
+  vertical-align: center;
+
+  border: 1px solid #ccc;
+}
