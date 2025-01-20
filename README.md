@@ -1,4 +1,7 @@
 Some common algorithms with optimum Space and time complexities
+### To run test:
+`npm install`
+`npm run test testToRun` for ex: `npm run test testToRun`
 
 ### Frequency counter, Multiple pointers and sliding window
 1. [Frequency calculator(Frequency calculator pattern)](https://github.com/ishan123456789/algos/blob/main/frequencyCalculator.js)
